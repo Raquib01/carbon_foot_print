@@ -1,0 +1,86 @@
+--> Carbon Foot Print:
+	The amount of Green House Gases released into the atmosphere as a result of the activities of a particular individual, organization, or community.
+
+* Green House Gases:
+1. Carbon di Oxide (CO2)
+2. Methane (CH4)
+3. Nitrous Oxide (N20)
+4. Hydrofluorocarbons (HFCs)
+5. Perfluorocarbons (PFCs)
+6. Sulphurhexafluoride (SF6) and Nitrogen trifluoride (NF3)
+	of which co2,ch4 and n2o are the major green house gases.
+
+	The term "Carbon Foot Print" was popularised by a Oil Company BP (British Petroleum) to draw awareness of people 
+towards individual responsibility for solving climate change.
+	Exact Carbon Foot Print cannot be calculated because of inadequate knowledge of the complex processes and influence of natural processes in the emission of carbon gases.
+
+--> Carbon Foot Print Calculator:
+	These websites ask you to answer more or less detailed questions about your diet, transportation choices, home size, shopping and recreational activities, usage of electricity, heating, and heavy appliances such as dryers and refrigerators, and so on. The website then estimates your carbon footprint based on your answers to these questions.
+
+* Direct Carbon Emission:
+	Carbon emmited directly by the individual on the site of production.
+Eg: Carbon emmited by the vehicle while driving.
+
+* Indirect Carbon Emission:
+	Carbon emmited indirectly, away from the site of production.
+Eg: Carbon emmited during manufacturing and delivery of your vehicle.
+
+* Some Carbon Foot Print Calculator
+1. carbonfootprint.com
+2. coolclimate.berkeley.edu
+3. footprint.wwf.org.uk
+	Carbon foot print is calculated in tonnes of co2 eq
+
+		Questions asked by carbon foot print calculator:
+1. Where do you live?
+2. How many people live in your house?
+3. Annual Income
+4. Do u own a vehicle?
+4.1. Your Vehicle works on Gasoline or Petrol or Diesel?
+4.2. Whats your mileage?
+4.3. Type of Vehicle
+4.4. old or new
+5. Do you prefer public transport?
+5.1 If yes then Bus / Train / Taxi
+6. How many miles pr day u travel?
+7. How many flight per year>
+7.1 If yes then Short / Medium / Long / Extended
+7.2 You travel in which class
+8. Electricity used per month in kW?
+9. LPG used per month?
+10. oil and other hitting oil used per month?
+11. Your House area?
+12. Water Usage>
+13. Eating Lifestyle
+13.1 Vegetarian / Vegan / Avg Meat Eater / Low Meat Eater / Heavy Meat Eater
+14. How much do you spend on goods per day?
+15. How much do you spend on service per day?
+16. Usage of Coal
+17. usage of wood
+18. How much do you spend on Medicines pr month?
+19. How much do you spend on Clothes and Accessories
+20. How much do you spend on Gadgets
+21. How much do you spend on paper based product like books, magazines, newspaper, etc
+22. How much do you spend on buying furniture
+23. Telephone bill
+24. Television bill
+	Avg Indian : 1.8 ton co2 eq per year	
+	Electricity:
+	5.43rupees = 1kwh = 1kg co2 eq
+
+	Vehicles:
+	1l petrol = 2.33kg co2 eq
+	1l diesel = 2.68kg co2 eq
+	1l LPG = 1.51kg co2 eq
+	1kg LPG = 3.06kg  co2 eq
+	
+	Public Transport:
+	1km in indian autorickhaw = 0.05kg co2 eq
+	Taxi 1km = 0.31 kg co2 eq
+	Bus 1km = 0.05 kg co2 eq
+	Train 1km = 0.10 kg co2 eq
+	9.07kg co2 per 40.23 km flight
+
+	Household:
+	1 LPG Cylinder = 42.50 kg eq
+ 
