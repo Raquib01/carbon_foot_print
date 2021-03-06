@@ -1,21 +1,30 @@
 *{
   box-sizing:border-box;
+  padding:0px;
+  margin:0px;
+  font-family: 'Space Mono', monospace;
   }
 
-body{
-  margin:0px;
+	/*header*/	
+.header-and-nav{
+  position:sticky;
+  top: 0;
+  width: 100%;
   }
-	
-	/*For header :start*/	
+  
 header{
   display:flex;
   align-items:center;
   justify-content:center;
   height:50px;
+  background-color:white;
   }
   
+.header-text h2{
+  font-family: 'Libre Baskerville', serif;
+  }
 
-.header_image {
+.header-image {
   position:absolute;
   left:5px;
   }
@@ -23,257 +32,245 @@ header{
 header img{
   max-width: 100%;
   height:50px;
-  }  
-	/*For header :end*/
+  }
 
-
-	/*For nav bar :start*/
-ul{
+	/*navigation bar*/  
+ul.nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
   background-color: #333;
-  overflow: auto;
-}
+  }
 
-ul li a {
+ul.nav li {
+  float: left;
+  }
+
+ul.nav li a {
   display: block;
   color: white;
-  padding: 8px 16px;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-}
+  }
 
-li.rightalign a{
-  float:right;
-}
- 
-ul li a.active {
-  background-color: blue;
-  color: white;
-}
-
-ul li a:hover:not(.active) {
+ul.nav li a:hover:not(.active) {
   background-color: #111;
-  color: white;
-}
+  }
 
-li.rightalign span{
+ul.nav li a.active {
+  background-color: #4CAF50;
+  }
+
+ul.nav li.right {
+  float: right;
+  }
+
+li.right span{
   font-size: 14px; 
   padding-right:3px;
 }	
 
-
-	/*for resposiveness on mobile device*/
-@media screen and (max-width: 2560px) {
-  ul{
-    width: 100%;
-    height: auto;
-    position: relative;
+@media screen and (max-width: 600px) {
+  ul.nav li.right,ul.nav li {
+  float: none;
   }
-  
-  ul li a {
-    float: left;
-    padding: 15px;
-  }
-  
-  li.rightalign a{
-    float: right;
-    padding: 15px;
-    }
-	  
-  
-
 }
 
-@media screen and (max-width: 425px) {
-  ul li a {
-    text-align: center;
-    float: none;
-  }
-  li.rightalign a{
-  text-align: center;
-    float: none;
-    }
-    
+	/*container1*/
+div.container1{
+  padding:50px 0px;
+  height:550px;
+  background-color:#f5f5f5;
 }
-	
-	/*For nav bar :end*/
-	
-	
-	/* For main :start*/
-main{
-
-  width:100%;
-  height:200px;
-  margin:5px 0px;
+  
+div.container1 h1{
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 8px;
   text-align:center;
-  overflow:auto;
-  background-color:#cccccc;
+  }
+  
+div.container1 img{
+  height:300px;
+  width:600px;
+  padding:20px 0px;
+  display:block;
+  margin:auto;
   }
 
-main h1{
-  font-family: 'Courier Prime', monospace;
+#counter{
+    color:black;
+    text-decoration:none;
+    background-color:#aac889;
+    padding:5px;
+    border-radius:8px;
+  }
+  
+div.container1 p{
+  text-align:center;
+  padding:20px;
+  }
+
+div.container1-1{
+  padding:18px 0px;
+  }
+div.container1-1 p{
+  text-align:left;
+  padding:3px 25px;
+  font-size:15px;
+  }
+  
+div.container1-1 p a{
+  text-decoration:none;
   color:blue;
-}
-main p{
-  color:black;
   font-weight:50px;
-  font-size:30px;
-  font-family: 'Akaya Kanadaka', cursive;
+  font-size:15px;
   }
-	/*For main :end*/
 
-	/* For container1 :start*/
-.container1{
-padding:1px 8px;
+div.container1-1 p a:hover{
+  text-decoration:underline;
+  }   
 
-margin:1px;
-}
+  /*container2*/
+.container2{
+  background-color:white;
+  height:380px;
+  padding:50px 0px;
+  }
+  
+.container2-1, .container2-2 {
+  float: left;
+  padding: 50px;
+  }
+  
+.container2-1{
+  width:60%;
+  }
 
-.container1 h3{
-  font-family: 'Courier Prime', monospace;
-  color:blue;
-}
+.container2-1 h2{
+  font-family: 'Libre Baskerville', serif;
+  padding:20px;
+  }
+.container2-2{
+  width:40%;
+  }
+  
+.container2-2 img{
+  height:200px;
+  width:360px;
+  }
 
-.container1 p{
-  font-family: 'Akaya Kanadaka', cursive;
-  font-size:20px;
-  color:black;
-}
-
-
-	/*For first container :end*/
-
-
-	/*For Button1 and Button 2 :start*/
-.button span{
-  font-family: 'Akaya Kanadaka', cursive;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .button1 {
-  border-radius: 26px;
-  background-color: #111;
-  border: none;
-  color: #FFFFFF;
+  padding: 8px 28px;
   text-align: center;
-  font-size: 20px;
-  padding: 12px;
-  width: 300px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button2 {
-  border-radius: 26px;
-  background-color: #111;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 12px;
-  width: 590px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.button span {
-  cursor: pointer;
+  text-decoration: none;
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  font-size: 16px;
+  margin: 25px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius:20px;
+  }
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
 
-.button:hover span {
-  padding-right: 25px;
-}
+ 
+	/*container3*/
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-	/*For Button1 and Button 2 :end*/
+div.container3{
+  background-color:#f5f5f5;
+  height:400px;
+  padding:50px 50px;
 
-	/*For Footer :start*/
-
-
-  footer{
-  padding:2px;
-  background-color:#111;
-}
-
-.footer{
-  float:left;
-  width:33.33%;
-  height:250px;
-  display:inline;
-  list-style-type:none;  
-  padding-left:0px;
-  background-color:#ccc;
+  }
   
+div.container3 p a{
+  text-decoration:none;
+  color:blue;
 }
+
+div.container3 p a:hover{
+  text-decoration:underline;
+}
+
+div.container3 h2{
+  font-family: 'Libre Baskerville', serif;
+  padding:20px;
+  }
   
-.footer li:first-child {
-  background-color: blue;
-  padding:8px 0px;
-  text-align:center;
-  font-family: 'Courier Prime', monospace;
-  text-shadow:3px 3px 5px black;
-  font-size: 15px;
+	/*container4*/
+div.container4{
+  background-color:white;
+  height:550px;
+  padding:50px 50px;  
+}
+
+div.container4 h2{
+  font-family: 'Libre Baskerville', serif;
+  padding:20px;
+  }
+
+div.container4 p{
+  padding:8px;
+  }
+
+
+div.container4 p span{
+  color:red;
+  font-size:20px;
+  }
+
+	/*footer*/
+footer{
+  background-color:#333;
   color:white;
-}
+  padding:20px;
+  }
   
-.footer li{
-  font-family: 'Akaya Kanadaka', cursive;
-  color:black;
-}
-
-
-.footer1 li{
-  padding:15px;
-  font-size:16px;
-}
+footer ul{
+  padding:10px;
+  list-style-type:none;
+  }
   
-.footer2 li{
-  padding:10px 0px;
-  font-size:15px;
+    
+footer ul li:first-child{
+  font-family: 'Libre Baskerville', serif;
+  padding:20px;
+  }
+footer li a{
+  text-decoration:none;
+  color:white;
+  }
+  
+footer li a:hover{
+  font-size:20px;
+  color:white;
+  }
+div.copyright-bar{
+  padding:4px 0px;
+  background-color:#111;
+  width:100%;
+  }  
+
+div.copyright-bar p{
+  color:white;
   text-align:center;
-} 
-
-.footer3 li{
- padding:35px;
- font-size:15px;
- text-align:center;
-}
- 
-.footer li span{
-  font-size:15px;
-}
-
-.lower{
- text-align:center;
- clear:both;
-}
- 
-.lower p{
-padding-top:22px;
-font-family:'Times New Roman';
-color:white;
-}
-	/*For Footer :end*/
-
-
-.other{
-height:800px;
-}	
-
-	
+  padding:4px 0px;
+  }
+  
+div.copyright-bar a{
+  color:green;
+  text-decoration:none;
+  }
