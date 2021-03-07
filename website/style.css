@@ -27,6 +27,7 @@ header{
 .header-image {
   position:absolute;
   left:5px;
+  margin:8px;
   }
 
 header img{

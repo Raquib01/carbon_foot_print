@@ -21,6 +21,8 @@ Author URL: http://instagram.com/raquib01
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
 
+    <!--Required link for favicon | tab icon-->
+    <link rel="icon" type="image/png" href="resources/tab-logo.png">
   </head>
 <body>
 
@@ -29,7 +31,7 @@ Author URL: http://instagram.com/raquib01
 <div class=header-and-nav>
   <header>
     <div class="header-image">
-      <a href="#"> <img src="resources/sample_logo.png" alt="Carbon Counter"> </a>
+      <a href="#"> <img src="resources/tree.png" alt="Carbon Counter"> </a>
     </div>
   
     <div class="header-text">
@@ -51,102 +53,81 @@ Author URL: http://instagram.com/raquib01
     </ul>
   <nav>
 </div>
-
-
-	<!--container5-->
-	
-<div class="container5">
+	<!--form-->
+<form id="counter-form" action="/action_page.php" targer="_self" method="post" name="counter-form">
   <h1> Carbon Counter </h1>
   <h3> Welcome!, Nice to see you here. It looks like you care, </h3>
   <p> Here, you can calculate your annual carbon emission by giving us some answers.</p>
-
-  <form target="_self" action="#" method="post" name="form1">
-    <fieldset>
-    <legend> Carbon Counter </legend>
-    <h4> Your Information </h4>
-    <label for="uname"> Name: </label>
-    <input type="text" id="uname" name="uname">
-
-    <label for="location"> Where do you live(country): </label>
-    <input type="text" id="location" name="location">
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+  <h2>Your Information</h2>
+  <label for="name">Name:</label>
+    <p><input type="text" placeholder="John Hopper" oninput="this.className = ''" id="name" name="name"></p>
+    <label for="location">Where do you live(country):</label>
+    <p><input type="text" placeholder="USA" oninput="this.className = ''" id="location" name="location"></p>
+    <label for="email">Email id:</label>
+    <p><input type="email" placeholder="johnhopper@hotmail.com" oninput="this.className = ''" id="email" name="email"></p>
+  </div>
   
+  <div class="tab">
+  <h2>Home:</h2>
+    <label for="electricity">Electricity Bill(monthly):</label>
+    <p><input type="number" placeholder="in rupees" oninput="this.className = ''" id="electricity" name="electricity"></p>
+    <label for="television">Television Bill(monthly):</label>
+    <p><input type="number" placeholder="in rupees" oninput="this.className = ''" id="television" name="television"></p>
+    <label for="telephone">Telephone Bill(monthly):</label>
+    <p><input type="number" placeholder="in rupees" oninput="this.className = ''" id="telephone" name="Telephone"></p>
+    <label for="gas">Cooking Gas(monthly):</label>
+    <p><input type="number" placeholder="no. of cylinder" oninput="this.className = ''" id="gas" name="gas"></p>
+    <label for="oil">Cooking Oil(monthly):</label>
+    <p><input type="number" placeholder="in litres" oninput="this.className = ''" id="oil" name="oil"></p>
+  </div>
+  <div class="tab">
+    <h2>Flight:</h2>
+    <p> How many flight do you take on annual basis</p>
+    <label for="short">Short Flights:</label>
+    <p><input type="number" placeholder="flights that take upto 3hrs" oninput="this.className = ''" id="short" name="short"></p>
+    <label for="medium">Medium Flights:</label>
+    <p><input type="number" placeholder="flights that take 3-6 hrs" oninput="this.className = ''" id="medium" name="medium"></p>
+    <label for="long">Long / Extended Flights:</label>
+    <p><input type="number" placeholder="flights that take more than 7 hrs" oninput="this.className = ''" id="long" name="long"></p>
+    </div>
   
-    <h4> Home </h4>
-    <label for="electricity"> Electricity usage(in kwh, monthly): </label>
-    <input type="number" id="electricity" name="electricity">
-    <p> or </p>
-    <label for="electricity-bill">Electricity Bill(monthly): </label>
-    <input type="number" id="electricity-bill" name="electricity-bill">
-  
-    <label for="gas"> Natural Gas(n.o of cylinder, monthly): </label>
-    <input type="number" id="gas" name="gas">
-  
-    <label for="oil">Heating Oil(in litres,monthly): </label>
-    <input type="number" id="oil" name="oil">
-  
-    <label for="wood">Use of woods(in kgs,monthly): </label>
-    <input type="number" id="wood" name="wood">
-  
-    <label for="television">Television Bill(monthly): </label>
-    <input type="number" id="television" name="television">
-  
-    <label for="telephone">Telephone Bill(monthly): </label>
-    <input type="number" id="telephone" name="telephone">
-   
-    <h4>Flight</h4>
-    <label for="flight">How many flight do you take on annual basis:</label>
-    <input type="number" id="flight" name="flight">
-  
-    <label for="flight-type">Type of Flights you take: </label>
-    <select id="flight-type" name="flight-type">
-      <option> Short </option>
-      <option> Medium </option>
-      <option> Long </option>
-      <option> Extended </option>
-    </select>
-  
-    <h4> Car or Motorcycle</h4>
-    <label for="car">Distance travel by car or motorcyle(in kms,daily): </label>
-    <input type="number" id="car" name="car">
-  
-    <label for="car-mileage">Mileage: </label>
-    <input type="number" id="car-mileage" name="car-mileage">
-    <p> or </p>
-    <label for="Car-type">Choose your car: </label>
-    <select id="car-type" name="car-type">
-      <option> car 1 </option>
-      <option> car 2 </option>
-      <option> car 3 </option>
-    </select>
-  
-    <h4> Rickshaw </h4>
-    <label for="auto">Distance travel by Auto-Rickshaw(in kms,daily): </label>
-    <input type="number" id="auto" name="auto">
-  
-    <h4> Taxi </h4>
-    <label for="taxi">Distance travel by Taxi(in kms,daily): </label>
-    <input type="number" id="taxi" name="taxi">
-
-    <h4> Bus </h4>
-    <label for="bus">Distance travel by bus(in kms,daily): </label>
-    <input type="number" id="bus" name="bus">
-
-    <h4> Train </h4>
-    <label for="train">Distance travel by train(in kms,daily): </label>
-    <input type="number" id="train" name="train">
-  
-    <button type="submit" class="button1">Submit</button>
-    <button type="reset" class="button1">Reset</button>
-    </fieldset>
-  </form>
+  <div class="tab">
+    <h2>Private Transport:</h2>
+    <label for="mileage">Mileage:</label>
+    <p><input type="number" placeholder="in kms/litre" oninput="this.className = ''" id="mileage" name="mileage"></p>
+    <label for="private">Daily Distance Travel:</label>
+    <p><input type="number" placeholder="in kms" oninput="this.className = ''" id="private" name="private"></p>
+    </div>
+    
+    <div class="tab">
+    <h2>Public Transport:</h2>
+    <p>Daily Distance by the following:</p>
+    <label for="bus">Bus:</label>
+    <p><input type="number" placeholder="in kms" oninput="this.className = ''" id="bus" name="bus"></p>
+    <label for="auto">Auto Rickshaw:</label>
+    <p><input type="number" placeholder="in kms" oninput="this.className = ''" id="auto" name="auto"></p>
+    <label for="taxi">Taxi:</label>
+    <p><input type="number" placeholder="in kms" oninput="this.className = ''" id="taxi" name="taxi"></p>
+    <label for="rail">Rail:</label>
+    <p><input type="number" placeholder="in kms" oninput="this.className = ''" id="rail" name="rail"></p>
+    </div>  
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
 </div>	
-	
-<div class="result">
-  <p> According to our calculation, your carbon output value is 4 tonnes </p>
-  <p> Thats close to average, check out how you can offsets this value </p>
-  <button type="button" class="button1">Carbon Offsets</button>
-  <p> or <a href="#">Donate</a> equivalent amount of funds.</p>
-</div>
 	
 	<!--footer-->
 <a name="footer"></a>
@@ -170,6 +151,8 @@ Author URL: http://instagram.com/raquib01
   <div class="copyright-bar">
     <p> Copyright <span class="material-icons" style="font-size:18px;">copyright</span> 2021 <a href="index.html">Carbon Counter</a> develop by: <a href="#">Team Fire</a></p>
   </div>
+  
+    <script src="script.js"></script>
 </body>
 </html>
 
