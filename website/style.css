@@ -248,16 +248,26 @@ footer ul{
 footer ul li:first-child{
   font-family: 'Libre Baskerville', serif;
   padding:20px;
+  color:green;
   }
-footer li a{
+ul.quicklink li a{
   text-decoration:none;
   color:white;
   }
   
-footer li a:hover{
+ul.quicklink li a:hover{
   font-size:20px;
   color:white;
   }
+  
+ul.footer li a{
+  color:green;
+  text-decoration:none;
+  }
+ul.footer li a:hover{
+  text-decoration:underline
+  }  
+
 div.copyright-bar{
   padding:4px 0px;
   background-color:#111;
