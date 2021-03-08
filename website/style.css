@@ -190,25 +190,42 @@ div.container1-1 p a:hover{
  
 	/*container3*/
 
-div.container3{
+.container3{
+  height:300px;
   background-color:#f5f5f5;
-  height:400px;
-  padding:50px 50px;
-
   }
   
-div.container3 p a{
-  text-decoration:none;
-  color:blue;
+* {
+  box-sizing: border-box;
 }
 
-div.container3 p a:hover{
-  text-decoration:underline;
+.box {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-div.container3 h2{
-  font-family: 'Libre Baskerville', serif;
-  padding:20px;
+.container3 .box img{
+  height:100px;
+  width:100px;
+  margin:auto;
+  display:block;
+  }
+  
+.container3 h2{
+ text-align:center;
+ color:green;
+ clear:both;
+ padding:20px;}
+  
+.container3 h3{
+  text-align:center;
   }
   
 	/*container4*/
