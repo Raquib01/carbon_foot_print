@@ -60,6 +60,16 @@ button:hover {
   background-color: #4CAF50;
   color: white;
 }
+button.login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size:13px;
+}
 
 
 
