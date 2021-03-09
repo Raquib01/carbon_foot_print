@@ -22,6 +22,7 @@ header{
   
 .header-text h2{
   font-family: 'Libre Baskerville', serif;
+  color:green;
   }
 
 .header-image {
@@ -79,7 +80,7 @@ li.right span{
 
 	/*container1*/
 div.container1{
-  padding:50px 0px;
+  padding:50px 20px;
   height:550px;
   background-color:#f5f5f5;
 }
@@ -108,16 +109,18 @@ div.container1 img{
   
 div.container1 p{
   text-align:center;
-  padding:20px;
+  padding:20px 0px;
   }
 
 div.container1-1{
-  padding:18px 0px;
+  padding:30px 0px;
   }
+
+
 div.container1-1 p{
   text-align:left;
-  padding:3px 25px;
-  font-size:15px;
+  padding:5px 0px;
+  font-size:13px;
   }
   
 div.container1-1 p a{
@@ -133,31 +136,55 @@ div.container1-1 p a:hover{
 
   /*container2*/
 .container2{
+  padding:50px 20px;
+  height:350px;
   background-color:white;
-  height:380px;
-  padding:50px 0px;
   }
   
-.container2-1, .container2-2 {
-  float: left;
-  padding: 50px;
+.container2 h1{
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 8px;
+  text-align:center;
+  padding:20px 0px;
   }
   
-.container2-1{
-  width:60%;
+.container2 p{
+  padding:3px 0px;
+  }
+  
+
+
+ 
+	/*container3*/
+
+.container3{
+  padding:50px 20px;
+  height:350px;
+  background-color:#f5f5f5;
   }
 
-.container2-1 h2{
-  font-family: 'Libre Baskerville', serif;
-  padding:20px;
+.container3 h2{
+ text-align:center;
+ color:green;
+ padding:20px;
+   font-family: 'Libre Baskerville', serif;
+ }
+ 
+.box {
+  float: left;
+  width: 25%;
+  padding: 20px;
   }
-.container2-2{
-  width:40%;
+
+.container3 h3{
+  text-align:center;
   }
   
-.container2-2 img{
-  height:200px;
-  width:360px;
+.container3 .box img{
+  height:100px;
+  width:100px;
+  margin:auto;
+  display:block;
   }
 
 .clearfix::after {
@@ -166,20 +193,33 @@ div.container1-1 p a:hover{
   display: table;
 }
 
+
+	/*container4*/
+div.container4{
+  padding:50px 20px;
+  height:400px;
+  background-color:white;
+}
+
+div.container4 h2{
+  font-family: 'Libre Baskerville', serif;
+  padding:20px;
+  }
+  
 .button1 {
-  padding: 8px 28px;
+  border: none;
+  padding: 2px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 25px 2px;
+  margin: 12px 10px;
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
-  border-radius:20px;
-  }
+}
 
 .button1:hover {
   background-color: #4CAF50;
@@ -187,68 +227,6 @@ div.container1-1 p a:hover{
 }
 
 
- 
-	/*container3*/
-
-.container3{
-  height:300px;
-  background-color:#f5f5f5;
-  }
-  
-* {
-  box-sizing: border-box;
-}
-
-.box {
-  float: left;
-  width: 25%;
-  padding: 20px;
-  }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.container3 .box img{
-  height:100px;
-  width:100px;
-  margin:auto;
-  display:block;
-  }
-  
-.container3 h2{
- text-align:center;
- color:green;
- clear:both;
- padding:20px;}
-  
-.container3 h3{
-  text-align:center;
-  }
-  
-	/*container4*/
-div.container4{
-  background-color:white;
-  height:550px;
-  padding:50px 50px;  
-}
-
-div.container4 h2{
-  font-family: 'Libre Baskerville', serif;
-  padding:20px;
-  }
-
-div.container4 p{
-  padding:8px;
-  }
-
-
-div.container4 p span{
-  color:red;
-  font-size:20px;
-  }
 
 	/*footer*/
 footer{
