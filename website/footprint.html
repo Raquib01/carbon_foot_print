@@ -54,9 +54,34 @@ Author URL: http://instagram.com/raquib01
       <li> <a href="#information"> Information </a> </li>
       <li> <a href="#footer"> About </a> </li>
       <li class="right"> <a href="#signup"> <span class="material-icons"> person_outline </span>  Sign up </a></li>
-      <li class="right"> <a href="#login"> <span class="material-icons"> login </span> Login </a></li>
+      <li class="right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="login">Login</button> </li>
     </ul>
   <nav>
+</div>
+	<!--LOGIN FORM-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="login">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </div>
 	<!--form-->
 <form id="counter-form" action="/action_page.php" targer="_self" method="post" name="counter-form">
